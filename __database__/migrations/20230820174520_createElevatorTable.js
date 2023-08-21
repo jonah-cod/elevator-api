@@ -1,10 +1,19 @@
-exports.up = async function (knex) {
-  await knex.schema.createTable("elevators", (table) => {
+/**
+ * creating elevator table
+ */
+exports.up = async function  (knex) {
+  await knex.schema
+  .createTable("elevators", (table) => {
     table.uuid("id").primary();
     table.string("capacity").notNullable();
-  });
-};
+  })
+  ;
+}
 
-exports.down = async function (knex) {
-  await knex.schema.dropTable("elevators");
-};
+/**
+ * dropping elevator table
+ */
+exports.down =  async function (knex) {
+  await knex.schema
+  .dropTable("elevators")
+}

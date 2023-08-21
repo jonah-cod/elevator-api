@@ -19,6 +19,13 @@ const db_helper = (connection) => ({
     const result = await query.connection(connection);
     return limitSingle && result.length === 1 ? result[0] : result;
   },
+  insert: async (tableName, data) => {
+    const result = await db_config(tableName)
+      .connection(connection)
+      .insert(data);
+
+    return result;
+  },
   getById: async (id, tableName) => {
     const result = await db_config
       .select()

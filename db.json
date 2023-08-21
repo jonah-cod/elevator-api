@@ -23,32 +23,55 @@
   ],
   "building_elevators": [
     {
-      "id": 1,
-      "elevatorId": 1,
-      "buildingId": 1,
-      "floorId": 1,
-      "currentDirection": "asc",
-      "buildingName": "Nyeri Tower"
+      "requestID": 1,
+      "elevatorID": "Elevator1",
+      "status": "active",
+      "direction": "up",
+      "currentFloor": 2,
+      "targetFloor": 7,
+      "destinationFloor": 7,
+      "doorsopen": false
     },
     {
-      "id": 2,
-      "elevatorId": 2,
-      "buildingId": 2,
-      "floorId": 2,
-      "currentDirection": "desc",
-      "buildingName": "Nyeri Tower"
-    }
-  ],
-  "elevator_request": [
-    {
-      "id": 1,
-      "elevatorId": 1,
-      "targetFloor": 1
+      "requestID": 2,
+      "elevatorID": "Elevator2",
+      "status": "idle",
+      "direction": "none",
+      "currentFloor": 5,
+      "targetFloor": 3,
+      "destinationFloor": 3,
+      "doorsopen": true
     },
     {
-      "id": 2,
-      "elevatorId": 2,
-      "targetFloor": 2
+      "requestID": 3,
+      "elevatorID": "Elevator1",
+      "status": "active",
+      "direction": "down",
+      "currentFloor": 9,
+      "targetFloor": 2,
+      "destinationFloor": 2,
+      "doorsopen": false
+    },
+    {
+      "requestID": 4,
+      "elevatorID": "Elevator3",
+      "status": "active",
+      "direction": "up",
+      "currentFloor": 1,
+      "targetFloor": 10,
+      "destinationFloor": 10,
+      "doorsopen": false
+    },
+    {
+      "requestID": 5,
+      "elevatorID": "Elevator2",
+      "status": "active",
+      "direction": "up",
+      "currentFloor": 3,
+      "targetFloor": 6,
+      "destinationFloor": 6,
+      "doorsopen": false
     }
   ]
+  
 }
