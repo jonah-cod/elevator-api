@@ -1,0 +1,15 @@
+version: '3.8'
+networks:
+  default:
+    name: elevator-network
+services:
+  api:
+    container_name: elevator-api
+    image: elevator-network
+    build:
+      context: .
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - "2020:2020"

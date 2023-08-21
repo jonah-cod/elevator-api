@@ -1,0 +1,54 @@
+{
+  "elevators": [
+    {
+      "elevatorId": 1,
+      "capacity": 5
+    },
+    {
+      "elevatorId": 2,
+      "capacity": 4
+    }
+  ],
+  "buildings": [
+    {
+      "buildingId": 1,
+      "buildingName": "Nyeri Tower",
+      "floors": 5
+    },
+    {
+      "buildingId": 2,
+      "buildingName": "Nai Tower",
+      "floors": 3
+    }
+  ],
+  "building_elevators": [
+    {
+      "id": 1,
+      "elevatorId": 1,
+      "buildingId": 1,
+      "floorId": 1,
+      "currentDirection": "asc",
+      "buildingName": "Nyeri Tower"
+    },
+    {
+      "id": 2,
+      "elevatorId": 2,
+      "buildingId": 2,
+      "floorId": 2,
+      "currentDirection": "desc",
+      "buildingName": "Nyeri Tower"
+    }
+  ],
+  "elevator_request": [
+    {
+      "id": 1,
+      "elevatorId": 1,
+      "targetFloor": 1
+    },
+    {
+      "id": 2,
+      "elevatorId": 2,
+      "targetFloor": 2
+    }
+  ]
+}
