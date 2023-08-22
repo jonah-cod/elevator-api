@@ -4,6 +4,10 @@ Welcome to the Elevator API setup guide! This guide will walk you through the st
 
 ## Project Setup Instructions
 
+### Setup Environment variables
+
+After cloning this repository create a .env file at the root direcory of this project with content simillar to .env.example or just rename the latter to .env
+
 ### Build Database and Containers
 
 1. Navigate to the root directory of the project.
