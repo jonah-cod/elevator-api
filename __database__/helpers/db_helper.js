@@ -8,7 +8,7 @@ const db_helper = (connection) => ({
     columns = "*",
     orderParam,
     orderBy,
-    limitSingle = true,
+    limitSingle = false,
   ) => {
     let query = db_config.select(columns).from(tableName).where(whereParams);
 
@@ -20,6 +20,7 @@ const db_helper = (connection) => ({
     return limitSingle && result.length === 1 ? result[0] : result;
   },
   insert: async (tableName, data) => {
+    console.log(data)
     const result = await db_config(tableName)
       .connection(connection)
       .insert(data);

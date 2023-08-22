@@ -2,7 +2,7 @@ require("dotenv").config({ path: "../.env" });
 module.exports = {
   client: "pg",
   connection: {
-    host: "localhost",
+    host: "elevator-api-database",
     user: process.env.DATABASE_USER,
     port: Number(process.env.DATABASE_PORT),
     password: process.env.DATABASE_PASSWORD,

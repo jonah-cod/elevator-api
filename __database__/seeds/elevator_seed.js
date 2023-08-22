@@ -1,18 +1,57 @@
 const knex = require("knex");
+const {randomUUID} = require("crypto");
+
 const elevator_seed = [
   {
-    id: "142e8446-f5ba-4813-bfb5-f3192a37f1bf",
-    capacity: "5",
+    elevatorID: randomUUID(),
+    status: "active",
+    direction: "up",
+    currentFloor: 2,
+    targetFloor: 7,
+    destinationFloor: 7,
+    doorsOpen: false
   },
   {
-    id: "bf6091cc-69f8-4a9e-93ed-0294c3a8ac2f",
-    capacity: "4",
+    elevatorID: randomUUID(),
+    status: "idle",
+    direction: "down",
+    currentFloor: 2,
+    targetFloor: null,
+    destinationFloor: null,
+    doorsOpen: false
   },
+  {
+    elevatorID: randomUUID(),
+    status: "active",
+    direction: "down",
+    currentFloor: 9,
+    targetFloor: 2,
+    destinationFloor: 4,
+    doorsOpen: false
+  },
+  {
+    elevatorID: randomUUID(),
+    status: "active",
+    direction: "up",
+    currentFloor: 1,
+    targetFloor: 2,
+    destinationFloor: 5,
+    doorsOpen: false
+  },
+  {
+    elevatorID: randomUUID(),
+    status: "idle",
+    direction: "none",
+    currentFloor: 6,
+    targetFloor: null,
+    destinationFloor: null,
+    doorsOpen: false
+  }
 ];
 
 const seed = async (knex) => {
-  await knex("elevators").truncate();
-  await knex("elevators").insert(elevator_seed);
+  await knex("elevators_info").truncate();
+  await knex("elevators_info").insert(elevator_seed);
 };
 
 module.exports = { seed };

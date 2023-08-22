@@ -23,54 +23,49 @@
   ],
   "building_elevators": [
     {
-      "requestID": 1,
-      "elevatorID": "Elevator1",
+      
       "status": "active",
       "direction": "up",
       "currentFloor": 2,
       "targetFloor": 7,
       "destinationFloor": 7,
-      "doorsopen": false
+      "doorsOpen": false
     },
     {
-      "requestID": 2,
-      "elevatorID": "Elevator2",
+      
       "status": "idle",
-      "direction": "none",
-      "currentFloor": 5,
-      "targetFloor": 3,
-      "destinationFloor": 3,
-      "doorsopen": true
+      "direction": "down",
+      "currentFloor": 2,
+      "targetFloor": null,
+      "destinationFloor": null,
+      "doorsOpen": true
     },
     {
-      "requestID": 3,
-      "elevatorID": "Elevator1",
+      
       "status": "active",
       "direction": "down",
       "currentFloor": 9,
       "targetFloor": 2,
-      "destinationFloor": 2,
-      "doorsopen": false
+      "destinationFloor": 4,
+      "doorsOpen": false
     },
     {
-      "requestID": 4,
-      "elevatorID": "Elevator3",
+      
       "status": "active",
       "direction": "up",
       "currentFloor": 1,
-      "targetFloor": 10,
-      "destinationFloor": 10,
-      "doorsopen": false
+      "targetFloor": 2,
+      "destinationFloor": 5,
+      "doorsOpen": false
     },
     {
-      "requestID": 5,
-      "elevatorID": "Elevator2",
-      "status": "active",
-      "direction": "up",
-      "currentFloor": 3,
-      "targetFloor": 6,
-      "destinationFloor": 6,
-      "doorsopen": false
+      
+      "status": "idle",
+      "direction": "none",
+      "currentFloor": 6,
+      "targetFloor": null,
+      "destinationFloor": null,
+      "doorsOpen": false
     }
   ]
   

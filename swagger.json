@@ -37,33 +37,6 @@
           }
         }
       }
-    },
-    "/": {
-      "get": {
-        "summary": "Get all the elevators",
-        "responses": {
-          "200": {
-            "description": "fetched all elevators",
-            "content": {
-              "application/json":{
-                "schema": {
-                  "$ref": "#/components/schemas/AllElevators"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Error",
-            "content": {
-              "application/json":{
-                "schema": {
-                  "$ref": "#/components/schemas/AllElevatorsError"
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "components": {
@@ -83,32 +56,6 @@
         }
       },
       "HealthErrorResponse": {
-        "type": "object",
-        "properties": {
-          "success": {
-            "type": "boolean",
-            "example": false
-          },
-          "message": {
-            "type": "string",
-            "example": "Elevator Api is down"
-          }
-        }
-      },
-      "AllElevators": {
-        "type": "object",
-        "properties": {
-          "success": {
-            "type": "boolean",
-            "example": true
-          },
-          "data": {
-            "type": "string",
-            "example": "Elevators"
-          }
-        }
-      },
-      "AllElevatorsError": {
         "type": "object",
         "properties": {
           "success": {

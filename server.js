@@ -39,3 +39,6 @@ app.listen(2020, () => {
   // }, 1000);
   console.log("Server running on PORT 2020");
 });
+
+
+module.exports.app = app;
